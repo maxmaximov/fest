@@ -89,9 +89,9 @@
 Итерация по объекту
 
 ```xml
-<fest:script>var itrerate = {"foo": "bar"}</fest:script>
-<fest:for iterate="itrerate" index="i">
-  <fest:value>i</fest:value>=<fest:value>itrerate[i]</fest:value>
+<fest:script>var obj = {"foo": "bar"}</fest:script>
+<fest:for iterate="obj" index="i">
+  <fest:value>i</fest:value>=<fest:value>obj[i]</fest:value>
 </fest:for>
 ```
 
@@ -214,7 +214,7 @@ var fest = require('../lib/fest');
 var data = {name: 'Jack "The Ripper"'},
     template = './templates/basic.xml';
 
-var compiled = fest.compile(template, {beatify: false}),
+var compiled = fest.compile(template, {beautify: false}),
     template = (new Function('return ' + compiled))();
 
 console.log(template(data));
