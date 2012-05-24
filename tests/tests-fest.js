@@ -150,7 +150,7 @@ vows.describe('Fast tests').addBatch({
         },
         'result':function(result){
             result = result.split('|');
-            assert.equal(result.length, 11);
+            assert.equal(result.length, 12);
             assert.equal(result[1], 'one');
             assert.equal(result[2], 'two2');
             assert.equal(result[3], 'three1');
@@ -160,6 +160,7 @@ vows.describe('Fast tests').addBatch({
             assert.equal(result[7], 'eight');
             assert.equal(result[8], 'nine');
             assert.equal(result[9], 'ten');
+            assert.equal(result[10], 'eleven');
         }
     },
     'params': {
