@@ -40,5 +40,11 @@
     </fest:foreach>
     <fest:set name="nine"><fest:value>this.nine</fest:value>|</fest:set>
     <fest:get name="nine"/>
+
+    <fest:script>
+        var name="ten";
+    </fest:script>
+    <fest:get select="name"/>
+    <fest:set name="ten">ten|</fest:set> 
     finish
 </fest:template>
