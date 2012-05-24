@@ -149,6 +149,7 @@ vows.describe('Fast tests').addBatch({
             return promise;
         },
         'result':function(result){
+            console.log(result);
             result = result.split('|');
             assert.equal(result.length, 12);
             assert.equal(result[1], 'one');
@@ -255,7 +256,7 @@ vows.describe('Fast tests').addBatch({
             "6:     <fest:attribute name='href'>#</fest:attribute>",
             "At line 5: fest:attributes cannot be nested"
         ].join('\n');
-    
+
         assert.equal(result, res);
       }
     },
@@ -292,7 +293,7 @@ vows.describe('Fast tests').addBatch({
               "2: <fest:template xmlns:fest=\"http://fest.mail.ru\" context_name=\"bad\">",
               "At line 2: fest:template is not closed"
           ].join('\n');
-    
+
           assert.equal(result, res);
         }
     },
