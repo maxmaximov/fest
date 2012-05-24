@@ -38,8 +38,8 @@
             <fest:otherwise/>
         </fest:choose>
     </fest:foreach>
-    <fest:set name="nine"><fest:value>this.nine</fest:value>|</fest:set>
-    <fest:get name="nine"/>
+    <fest:set name="&quot;"><fest:value>this.nine</fest:value>|</fest:set>
+    <fest:get name="&quot;"/>
 
     <fest:script>
         var name="ten";
@@ -56,6 +56,5 @@
     </fest:set>
 
     <fest:get name="block">{callback: "block2", data: {text: "eleven"}}</fest:get>
-
     finish
 </fest:template>
